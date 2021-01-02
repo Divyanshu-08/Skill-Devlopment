@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(80, 80, 80);
+}
+
+img{
+    width: 100%;
+}
+#parent{
+    justify-content: space-between;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.child1, .child2, .child3{
+    border: 5px rgb(0, 183, 255) double;
+    border-radius: 10px;
+    width: 30%;
+}
+
+@media(max-width:700px){
+    #parent{
+        justify-content: space-between;
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .child1, .child2, .child3{
+        border: 10px rgb(255, 8, 0) groove;
+        border-radius: 10px;
+        width: 95%;
+    }
+}
